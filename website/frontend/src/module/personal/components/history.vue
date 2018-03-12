@@ -1,34 +1,19 @@
 <template>
   <div>
-      <Card>
-        <Row>
-          <Col span="6"><img src="/static/img/a1.jpg" height="180px"></Col>
-          <Col span="15" >
-            <div>
-              <h2>
-                [九成新] 操作系统笔记
-              </h2>
-            </div>
-            <div style ="float: right;margin-top:20px;font-size:15px">
-              价格：25元
-            </div>
-            <div style ="margin-top: 50px">
-              <h4>
-              上架时间：2017/11/01
-              </h4>
-            </div>
-            <div style ="float: none;">
-              分类：学习资料
-            </div>
-            
-          </Col>
-        </Row>
-      </Card>
+      <historyitem name="[八成新]iPhone8 Plus 128G 黑色" imgUrl="/static/img/ip8.jpg" price="3500 元" state="已卖"></historyitem>
+      <historyitem name="[九成新]西部数据 My Passport 1TB 2.5英寸 中国红 移动硬盘" imgUrl="/static/img/ydyp.jpg" price="350 元" state="未卖"></historyitem>
+      <historyitem name="[九成新]华为Mate10 Pro 64G 樱粉金" imgUrl="/static/img/hw1.jpg" price="3500 元" state="已卖"></historyitem>
   </div>
 </template>
 <script>
+import historyitem from './historyitem.vue'
 export default {
-  
+  components: {historyitem},
+  data () {
+    return {
+      ids: ['id1']
+    }
+  }
 }
 </script>
 <style scoped>
